@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingLeft="@dimen/value_10dp"
+              android:paddingRight="@dimen/value_10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/listadapter_releated_ebook_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_5dp"
+        android:background="@mipmap/app_default"/>
+
+    <TextView
+        android:id="@+id/listadapter_releated_ebook_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/value_5dp"
+        android:text="Go Set a Watch"
+        android:textSize="@dimen/textsize_20px"
+        android:textColor="@color/color_content_light"/>
+
+    <TextView
+        android:id="@+id/listadapter_releated_ebook_tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harpper Lee"
+        android:textSize="@dimen/textsize_20px"
+        android:textColor="@color/color_content_light"/>
+</LinearLayout>

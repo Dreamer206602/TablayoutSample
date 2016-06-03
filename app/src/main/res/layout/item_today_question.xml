@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/value_30dp"
+              android:paddingRight="@dimen/value_30dp">
+
+    <TextView
+        android:id="@+id/listadapter_answer_tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="问题1：第二次世界大战开始于？"
+        android:textColor="@color/color_content_light"
+        android:textSize="@dimen/textsize_20px" />
+
+    <RadioGroup
+        android:id="@+id/listadapter_answer_rg_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/listadapter_answer_rb_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"
+            android:paddingLeft="@dimen/value_5dp"
+            android:text="A、1939年9月1日，波兰"
+            android:textColor="@color/color_content_light"
+            android:textSize="@dimen/textsize_20px" />
+
+        <RadioButton
+            android:id="@+id/listadapter_answer_rb_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"
+            android:paddingLeft="@dimen/value_5dp"
+            android:text="B、1939年4月1日，波兰"
+            android:textColor="@color/color_content_light"
+            android:textSize="@dimen/textsize_20px" />
+
+        <RadioButton
+            android:id="@+id/listadapter_answer_rb_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"
+            android:paddingLeft="@dimen/value_5dp"
+            android:text="C、1929年9月1日，波兰"
+            android:textColor="@color/color_content_light"
+            android:textSize="@dimen/textsize_20px" />
+
+        <RadioButton
+            android:id="@+id/listadapter_answer_rb_answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"
+            android:paddingLeft="@dimen/value_5dp"
+            android:text="D、1939年1月1日，波兰"
+            android:textColor="@color/color_content_light"
+            android:textSize="@dimen/textsize_20px" />
+    </RadioGroup>
+</LinearLayout>
