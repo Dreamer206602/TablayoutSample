@@ -32,7 +32,7 @@ public class TodayAnswerFragment extends Fragment {
     /**
      * 能否更改答案
      */
-    private boolean bEdit = false;
+    private boolean bEdit = true;
 
     private static TodayAnswerFragment sTodayAnswerFragment;
     @Bind(R.id.recyclerView)
@@ -116,24 +116,28 @@ public class TodayAnswerFragment extends Fragment {
                         @Override
                         public void onCheckedChanged(RadioGroup group, int checkedId) {
                             int i = 0;
-
                             if (checkedId == viewHilder.getView(R.id.listadapter_answer_rb_answer1).getId()) {
                                 i = 0;
+                                info.getAnswerList().get(i).setSelected(true);
+
                             } else if (checkedId == viewHilder.getView(R.id.listadapter_answer_rb_answer2).getId()) {
                                 i = 1;
+                                info.getAnswerList().get(i).setSelected(true);
                             } else if (checkedId == viewHilder.getView(R.id.listadapter_answer_rb_answer3).getId()) {
                                 i = 2;
+                                info.getAnswerList().get(i).setSelected(true);
                             } else if (checkedId == viewHilder.getView(R.id.listadapter_answer_rb_answer4).getId()) {
                                 i = 3;
+                                info.getAnswerList().get(i).setSelected(true);
                             }
 
-                            for (int j = 0 ; j < info.getAnswerList().size() ; j++) {
-                                if (i == j) {
-                                    info.getAnswerList().get(j).setSelected(true);
-                                } else {
-                                    info.getAnswerList().get(j).setSelected(false);
-                                }
-                            }
+//                            for (int j = 0 ; j < info.getAnswerList().size() ; j++) {
+//                                if (i == j) {
+//                                    info.getAnswerList().get(j).setSelected(true);
+//                                } else {
+//                                    info.getAnswerList().get(j).setSelected(false);
+//                                }
+//                            }
                             mInfos.set(position, info);
 //                            Message msg = new Message();
 //                            msg.obj = QuestionAdapter.this;

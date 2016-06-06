@@ -10,7 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
         android:orientation="vertical">
 
         <com.flyco.tablayout.SegmentTabLayout
@@ -21,7 +22,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             tl:tl_bar_color="#ffffff"
-            tl:tl_indicator_color="#EC7263"
+            tl:tl_indicator_color="#004983"
             tl:tl_indicator_corner_radius="8dp"
             tl:tl_tab_width="120dp"/>
         <!--tl:tl_indicator_margin_bottom="2dp"-->
